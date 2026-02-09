@@ -38,9 +38,11 @@
 <li>mkdir bin</li>
 <li>javac -d bin src\hpdbscan\*.java</li>
 <li>ava -cp bin hpdbscan.Main datasets/densired_3.csv 2 60</li>
-<ol>
+<li>java -Xmx8g -cp bin hpdbscan.Main datasets/densired_3.csv 0.25 60</li>
+</ol>
 
 #### Sample outputs
+```
 (.venv) PS D:\DB Scan> java -cp bin hpdbscan.Main datasets/densired_3.csv 0.025 50
 === HPDBSCAN Main starting... ===
 Loading points from: datasets/densired_3.csv
@@ -64,3 +66,46 @@ Wrote clustering result to hpdbscan_output.csv
 Clusters (label > 0): 7
 Noise points (label = 0): 9999536
 
+
+(.venv) PS D:\DB Scan> java -cp bin hpdbscan.Main datasets/densired_3.csv 2 60
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Exception in thread "main" java.lang.OutOfMemoryError
+        at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)   
+        at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+        at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+        at java.base/java.util.concurrent.ForkJoinTask.getException(ForkJoinTask.java:561)
+        at java.base/java.util.concurrent.ForkJoinTask.reportException(ForkJoinTask.java:577)
+        at java.base/java.util.concurrent.ForkJoinTask.join(ForkJoinTask.java:667)
+        at java.base/java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:681)
+        at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateParallel(ForEachOps.java:162)
+        at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateParallel(ForEachOps.java:176)
+        at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:264)
+        at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+        at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:806)
+        at hpdbscan.HPDBSCAN.run(HPDBSCAN.java:31)
+        at hpdbscan.Main.main(Main.java:34)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+        at java.base/java.util.Arrays.copyOf(Arrays.java:3478)
+        at java.base/java.util.ArrayList.grow(ArrayList.java:238)
+        at java.base/java.util.ArrayList.grow(ArrayList.java:245)
+        at java.base/java.util.ArrayList.add(ArrayList.java:484)
+        at java.base/java.util.ArrayList.add(ArrayList.java:497)
+        at hpdbscan.HPDBSCAN.getNeighbors(HPDBSCAN.java:111)
+        at hpdbscan.HPDBSCAN.expandCluster(HPDBSCAN.java:99)
+        at hpdbscan.HPDBSCAN.processCellLocally(HPDBSCAN.java:75)
+        at hpdbscan.HPDBSCAN$$Lambda/0x000000002d041460.accept(Unknown Source)
+        at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+        at java.base/java.util.concurrent.ConcurrentHashMap$ValueSpliterator.forEachRemaining(ConcurrentHashMap.java:3628)       
+        at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+        at java.base/java.util.stream.ForEachOps$ForEachTask.compute(ForEachOps.java:293)
+        at java.base/java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:759)
+        at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+        at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+        at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+        at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+```

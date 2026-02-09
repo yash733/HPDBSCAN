@@ -61,16 +61,16 @@ public class Main {
                     clusterCount++;
                 }
             }
-            System.out.println("=== Cluster summary: ===");
-            for (var e : counts.entrySet()) {
-                int label = e.getKey();
-                int size = e.getValue();
-                if (label == -1) {
-                    System.out.println("  Noise: " + size + " points");
-                } else {
-                    System.out.println("  Cluster " + label + ": " + size + " points");
-                }
-            }
+            // System.out.println("=== Cluster summary: ===");
+            // for (var e : counts.entrySet()) {
+            //     int label = e.getKey();
+            //     int size = e.getValue();
+            //     if (label == -1) {
+            //         System.out.println("  Noise: " + size + " points");
+            //     } else {
+            //         System.out.println("  Cluster " + label + ": " + size + " points");
+            //     }
+            // }
 
             long endTime = System.currentTimeMillis();
             System.out.println(" ==== Clustering completed in " + (endTime - startTime) + "ms ==== ");
