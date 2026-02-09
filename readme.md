@@ -1,0 +1,27 @@
+# HPDBSCAN
+## Team : 8 "Yash Gupta"
+
+### To run
+1. python .\src\verify_hpdbscan.py
+2. java -cp bin hpdbscan.Main <csv_file_path> <epsilon> <minPoints>
+
+### Python - Set Custom <csv_file_path> , <epsilon> & <minPoints>
+- Go to line no. 69 and change input values.
+
+### Custom Classes
+-  Point      -> uses double[], int, boolean, etc.
+-  GridCell   -> uses List<Point>, List<Long>
+-  HPDBSCAN   -> uses Map<List<Long>, GridCell>, List<Point>
+
+### Description:
+<ul>
+<li>Point.java</li>
+<p>Represents a single data point in N-dimensional space, storing its unique id, coordinate array, and clustering metadata such as assigned cluster label and flags for core or noise points. It also provides helper methods like distance computation and a readable toString used by the Python visualization script.</p> 
+<li>GridCell.java</li>
+<p>Implements the grid-based spatial index used by HPDBSCAN, mapping a hypergrid cell (discretized by epsilon) to the list of points it contains. It supports computing cell neighbors and efficient lookup of candidate points for epsilon-neighborhood queries, which reduces the cost of range searches.</p>
+<li>HPDBSCAN.java</li>
+<p>Contains the actual HPDBSCAN clustering algorithm: building the hypergrid index, estimating cell costs, splitting space for parallelism, running the local DBSCAN-style pass, and merging partial clusters by rule-based relabeling. It assigns final cluster labels or noise to every Point.</p>
+<li>Main.java</li>
+<p>Command-line entry point. It parses arguments (<csv_file_path> <epsilon> <minPoints>), loads the dataset into Point objects, invokes HPDBSCAN with the chosen parameters, measures runtime, and prints a sample of the labeled points to standard output for further analysis or plotting.</p>
+</ul>
+
