@@ -1,4 +1,7 @@
 package hpdbscan;
+import java.io.PrintWriter;
+import java.util.HashMap;
+import java.util.Map;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -8,7 +11,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("HPDBSCAN Main starting...");
+        System.out.println("=== HPDBSCAN Main starting... ===");
 
         if (args.length < 3) {
             System.out.println("Usage: java hpdbscan.Main <csv_file_path> <epsilon> <minPoints>");
@@ -27,16 +30,54 @@ public class Main {
             long startTime = System.currentTimeMillis();
 
             HPDBSCAN algo = new HPDBSCAN(points, epsilon, minPoints);
-            System.out.println("Running HPDBSCAN...");
+            System.out.println("=== Running HPDBSCAN... ===");
             algo.run();
 
-            long endTime = System.currentTimeMillis();
-            System.out.println("Clustering completed in " + (endTime - startTime) + "ms");
+            try (PrintWriter pw = new PrintWriter("hpdbscan_output.csv")) {
+                for (Point p : points) {
+                    double[] c = p.getCoords();
+                    // write: x,y,label (extend if higher‑dimensional)
+                    pw.println(c[0] + "," + c[1] + "," + p.getLabel());
+                }
+                }
+            System.out.println("Wrote clustering result to hpdbscan_output.csv");
 
-            System.out.println("Sample Results (First 10 points):");
-            for (int i = 0; i < Math.min(10, points.size()); i++) {
-                System.out.println(points.get(i));
+            // System.out.println("Sample Results (First 10 points):");
+            // for (int i = 0; i < Math.min(10, points.size()); i++) {
+            //     System.out.println(points.get(i));
+            // }
+
+            // Count points per cluster
+            Map<Integer, Integer> counts = new HashMap<>();
+            for (Point p : points) {
+                counts.merge(p.getLabel(), 1, Integer::sum);
             }
+
+            // Compute number of clusters (labels > 0) and noise
+            int noisePoints = counts.getOrDefault(0, 0);
+            int clusterCount = 0;
+            for (int label : counts.keySet()) {
+                if (label > 0) {
+                    clusterCount++;
+                }
+            }
+            System.out.println("=== Cluster summary: ===");
+            for (var e : counts.entrySet()) {
+                int label = e.getKey();
+                int size = e.getValue();
+                if (label == -1) {
+                    System.out.println("  Noise: " + size + " points");
+                } else {
+                    System.out.println("  Cluster " + label + ": " + size + " points");
+                }
+            }
+
+            long endTime = System.currentTimeMillis();
+            System.out.println(" ==== Clustering completed in " + (endTime - startTime) + "ms ==== ");
+
+            System.out.println("=== Total Number of: ===");
+            System.out.println("Clusters (label > 0): " + clusterCount);
+            System.out.println("Noise points (label = 0): " + noisePoints);
 
         } catch (IOException e) {
             System.err.println("Error reading file: " + e.getMessage());
@@ -65,4 +106,5 @@ public class Main {
         }
         return points;
     }
+    
 }

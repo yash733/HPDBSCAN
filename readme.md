@@ -1,11 +1,16 @@
 # HPDBSCAN
-## Team : 8 "Yash Gupta"
+## Team : 8 
+### "Yash Gupta"
 
 ### To run
 1. python .\src\verify_hpdbscan.py
-2. java -cp bin hpdbscan.Main <csv_file_path> <epsilon> <minPoints>
+2. java -cp bin hpdbscan.Main _csv_file_path_ _epsilon_ _minPoints_
+    ```
+    java -cp bin hpdbscan.Main data.csv 1.5 2
+    ```
 
-### Python - Set Custom <csv_file_path> , <epsilon> & <minPoints>
+### Python - 
+##### Set Custom _csv_file_path_ , _epsilon_ , _minPoints_
 - Go to line no. 69 and change input values.
 
 ### Custom Classes
@@ -24,4 +29,38 @@
 <li>Main.java</li>
 <p>Command-line entry point. It parses arguments (<csv_file_path> <epsilon> <minPoints>), loads the dataset into Point objects, invokes HPDBSCAN with the chosen parameters, measures runtime, and prints a sample of the labeled points to standard output for further analysis or plotting.</p>
 </ul>
+
+
+#### Quick Access Commands 
+<ol>
+<li>$env:Path = "Y:\java\jdk-25.0.2\bin;"</li>
+<li>rm -Recurse -Force bin</li>
+<li>mkdir bin</li>
+<li>javac -d bin src\hpdbscan\*.java</li>
+<li>ava -cp bin hpdbscan.Main datasets/densired_3.csv 2 60</li>
+<ol>
+
+#### Sample outputs
+(.venv) PS D:\DB Scan> java -cp bin hpdbscan.Main datasets/densired_3.csv 0.025 50
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to hpdbscan_output.csv
+=== Cluster summary: ===
+  Cluster 0: 9999536 points
+  Cluster 3356064: 50 points
+  Cluster 3355223: 50 points
+  Cluster 3355140: 61 points
+  Cluster 3340309: 72 points
+  Cluster 3324601: 50 points
+  Cluster 3369646: 51 points
+  Cluster 3330892: 130 points
+ ==== Clustering completed in 37603ms ====
+=== Total Number of: ===
+Clusters (label > 0): 7
+Noise points (label = 0): 9999536
 

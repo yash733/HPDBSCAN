@@ -65,8 +65,7 @@ def run_pipeline():
 
     # 3. Run Java Application
     print("3. Running Java HPDBSCAN...")
-    # Command: Y:/Java/bin/java.exe -cp bin hpdbscan.Main data.csv 1.5 4
-    run_cmd = [JAVA_PATH, "-cp", "bin", "hpdbscan.Main", "./datasets/densired_2.csv", "0.025", "10"]
+    run_cmd = [JAVA_PATH, "-cp", "bin", "hpdbscan.Main", "data.csv", "0.1", "2"]
     
     try:
         result = subprocess.run(run_cmd, capture_output=True, text=True, check=True, env=env)
@@ -84,52 +83,45 @@ def run_pipeline():
     # Matches both standard "Point{...}" and the optimized "id,label" if you switched
     # We'll support the standard "Point{...}" format from the first provided code
     # Point{id=1, coords=[5.1, 5.2], label=1}
-    for line in output_lines:
-        if "Point{" in line:
-            coords_match = re.search(r'coords=\[(.*?)\]', line)
-            label_match = re.search(r'label=(-?\d+)', line)
-            
-            if coords_match and label_match:
-                coords_str = coords_match.group(1)
-                # handle spaces after commas if present
-                coords = [float(x) for x in coords_str.split(',')]
-                label = int(label_match.group(1))
-                
-                if label not in clusters: clusters[label] = []
-                clusters[label].append(coords)
+    lines = result.stdout.splitlines()
 
-    if not clusters:
-        print("   Warning: No clusters parsed. Did the Java output format change?")
-        print("   Sample Output:", output_lines[:3])
-        return
+    clusters = {}   # label -> (xs, ys)
+    for line in lines:
+        if "Point{" not in line:
+            continue
 
-    print(f"   Found {len(clusters)} groups (including noise). Plotting...")
-    
-    colors = ['gray', 'red', 'blue', 'green', 'orange', 'purple', 'cyan', 'magenta']
-    
-    plt.figure(figsize=(10, 6))
-    for label, points in clusters.items():
-        xs = [p[0] for p in points]
-        ys = [p[1] for p in points]
-        
-        # Color logic: Noise (0 or -1 depending on impl) is usually gray/black
-        if label <= 0:
-            color = 'black'
-            marker = 'x'
-            name = "Noise"
-            alpha = 0.5
+        coords_match = re.search(r"coords=\[(.*?)\]", line)
+        label_match = re.search(r"label=(-?\d+)", line)
+        if not coords_match or not label_match:
+            continue
+
+        coords_str = coords_match.group(1)
+        parts = [float(p.strip()) for p in coords_str.split(",")]
+        if len(parts) < 2:
+            continue
+
+        x, y = parts[0], parts[1]
+        label = int(label_match.group(1))
+
+        if label not in clusters:
+            clusters[label] = ([], [])
+        clusters[label][0].append(x)
+        clusters[label][1].append(y)
+
+    # now plot ALL clustered points
+    plt.figure(figsize=(8, 6))
+    for label, (xs, ys) in clusters.items():
+        if label == -1:
+            plt.scatter(xs, ys, s=5, c="black", marker="x", label="noise")
         else:
-            color = colors[label % len(colors)]
-            marker = 'o'
-            name = f"Cluster {label}"
-            alpha = 1.0
-            
-        plt.scatter(xs, ys, c=color, marker=marker, label=name, alpha=alpha, s=30)
+            plt.scatter(xs, ys, s=5, label=f"cluster {label}")
 
-    plt.title("HPDBSCAN Result (Java implementation)")
-    plt.legend()
-    plt.grid(True, alpha=0.3)
-    
+    plt.xlabel("x")
+    plt.ylabel("y")
+    plt.title("HPDBSCAN clustering result (all points)")
+    plt.legend(markerscale=2, fontsize="small", loc="best")
+    plt.tight_layout()
+    plt.show()
     output_img = "cluster_result.png"
     plt.savefig(output_img)
     print(f"   Success! Plot saved to {output_img}")
