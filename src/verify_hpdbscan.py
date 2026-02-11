@@ -41,7 +41,7 @@ def run_pipeline():
     # print(f"   Data saved to {csv_path}")
 
     # 2. Compile Java Code
-    print("2. Compiling Java HPDBSCAN...")
+    print("1. Compiling Java HPDBSCAN...")
     # Find all java files in the folder
     java_files = glob.glob(os.path.join("src", "hpdbscan", "*.java"))
     
@@ -64,49 +64,39 @@ def run_pipeline():
         return
 
     # 3. Run Java Application
-    print("3. Running Java HPDBSCAN...")
-    run_cmd = [JAVA_PATH, "-cp", "bin", "hpdbscan.Main", "data.csv", "0.1", "2"]
-    
+    print("2. Running Java HPDBSCAN...")
+    run_cmd = [JAVA_PATH, "-cp", "bin", "hpdbscan.Main", "densired_2_shrink.csv", "1", "12"]
+    print("   Executed Successfully")
+    # run_cmd = [JAVA_PATH, "-cp", "bin", "hpdbscan.Main", "data.csv", "1", "12"]
+
     try:
-        result = subprocess.run(run_cmd, capture_output=True, text=True, check=True, env=env)
+        subprocess.run(run_cmd, capture_output=True, text=True, check=True, env=env)
     except subprocess.CalledProcessError as e:
         print("   Java Runtime Error:")
         print(e.stderr)
         return
-
+ 
     # 4. Parse & Plot Results
-    print("4. Parsing and Plotting results...")
-    clusters = {}
-    output_lines = result.stdout.splitlines()
-    
-    # Regex to parse Point.toString() output
-    # Matches both standard "Point{...}" and the optimized "id,label" if you switched
-    # We'll support the standard "Point{...}" format from the first provided code
-    # Point{id=1, coords=[5.1, 5.2], label=1}
-    lines = result.stdout.splitlines()
+    print("3. Parsing and Plotting results...")
 
-    clusters = {}   # label -> (xs, ys)
-    for line in lines:
-        if "Point{" not in line:
-            continue
+    csv_path = "hpdbscan_output.csv"
+    clusters = {}  # label -> (xs, ys)
 
-        coords_match = re.search(r"coords=\[(.*?)\]", line)
-        label_match = re.search(r"label=(-?\d+)", line)
-        if not coords_match or not label_match:
-            continue
+    with open(csv_path, newline="") as f:
+        reader = csv.reader(f)
+        for row in reader:
+            if len(row) < 3:
+                continue
+            x = float(row[0])
+            y = float(row[1])
+            label = int(row[2])
 
-        coords_str = coords_match.group(1)
-        parts = [float(p.strip()) for p in coords_str.split(",")]
-        if len(parts) < 2:
-            continue
+            if label not in clusters:
+                clusters[label] = ([], [])
+            clusters[label][0].append(x)
+            clusters[label][1].append(y)
 
-        x, y = parts[0], parts[1]
-        label = int(label_match.group(1))
-
-        if label not in clusters:
-            clusters[label] = ([], [])
-        clusters[label][0].append(x)
-        clusters[label][1].append(y)
+    print("4. Found cluster labels:", list(clusters.keys()))
 
     # now plot ALL clustered points
     plt.figure(figsize=(8, 6))
@@ -118,10 +108,10 @@ def run_pipeline():
 
     plt.xlabel("x")
     plt.ylabel("y")
-    plt.title("HPDBSCAN clustering result (all points)")
+    plt.title("5. HPDBSCAN clustering result (all points)")
     plt.legend(markerscale=2, fontsize="small", loc="best")
     plt.tight_layout()
-    plt.show()
+    
     output_img = "cluster_result.png"
     plt.savefig(output_img)
     print(f"   Success! Plot saved to {output_img}")

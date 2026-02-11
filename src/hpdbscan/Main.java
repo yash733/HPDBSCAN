@@ -42,10 +42,10 @@ public class Main {
                 }
             System.out.println("Wrote clustering result to hpdbscan_output.csv");
 
-            // System.out.println("Sample Results (First 10 points):");
-            // for (int i = 0; i < Math.min(10, points.size()); i++) {
-            //     System.out.println(points.get(i));
-            // }
+            System.out.println("Sample Results (First 10 points):");
+            for (int i = 0; i < Math.min(10, points.size()); i++) {
+                System.out.println(points.get(i));
+            }
 
             // Count points per cluster
             Map<Integer, Integer> counts = new HashMap<>();

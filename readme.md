@@ -37,7 +37,7 @@
 <li>rm -Recurse -Force bin</li>
 <li>mkdir bin</li>
 <li>javac -d bin src\hpdbscan\*.java</li>
-<li>ava -cp bin hpdbscan.Main datasets/densired_3.csv 2 60</li>
+<li>java -cp bin hpdbscan.Main datasets/densired_3.csv 2 60</li>
 <li>java -Xmx8g -cp bin hpdbscan.Main datasets/densired_3.csv 0.25 60</li>
 </ol>
 
@@ -66,6 +66,47 @@ Wrote clustering result to hpdbscan_output.csv
 Clusters (label > 0): 7
 Noise points (label = 0): 9999536
 
+(.venv) PS D:\DB Scan> java -cp bin hpdbscan.Main datasets/densired_3.csv 0.02 60
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to hpdbscan_output.csv
+ ==== Clustering completed in 29389ms ==== 
+=== Total Number of: ===
+Clusters (label > 0): 0
+Noise points (label = 0): 10000000
+
+(.venv) PS D:\DB Scan> java -cp bin hpdbscan.Main datasets/densired_3.csv 0.02 15
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to hpdbscan_output.csv
+ ==== Clustering completed in 37034ms ==== 
+=== Total Number of: ===
+Clusters (label > 0): 310
+Noise points (label = 0): 9948533
+
+(.venv) PS D:\DB Scan> java -cp bin hpdbscan.Main datasets/densired_3.csv 0.035 60
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to hpdbscan_output.csv
+ ==== Clustering completed in 46883ms ==== 
+=== Total Number of: ===
+Clusters (label > 0): 12
+Noise points (label = 0): 9945476
 
 (.venv) PS D:\DB Scan> java -cp bin hpdbscan.Main datasets/densired_3.csv 2 60
 === HPDBSCAN Main starting... ===
