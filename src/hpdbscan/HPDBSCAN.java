@@ -29,8 +29,6 @@ public class HPDBSCAN {
         System.out.println("Phase 2: Running Parallel Local DBSCAN...");
         // Parallel stream mimics distributing work to processors
         grid.values().parallelStream().forEach(this::processCellLocally);
-        // how our grid looks 
-        // grid = { grid_cell_coordinate : [ list of Point objects (each with coords, visited, clusterLabel, isCore) ] }
 
         System.out.println("Phase 3: Merging cluster labels...");
         resolveMerges();
@@ -39,22 +37,18 @@ public class HPDBSCAN {
     private void buildGrid() {
         for (Point p : points) {
             List<Long> key = GridCell.getCellKey(p, epsilon);
-            // Storing Coordinates of block under Grid map
             grid.computeIfAbsent(key, k -> new GridCell(k)).points.add(p); 
         }
     }
 
-    // Run DBSCAN logic on a single cell, considering Halo blocks
-    // input data type GridCell can var cell
+    // Run DBSCAN logic on a single cell (no more contextPoints giant list!)
     private void processCellLocally(GridCell cell) {
-        List<Point> contextPoints = getHaloPoints(cell); // hot block + halo blocks
-
         for (Point p : cell.points) {
             if (p.visited) continue;
             p.visited = true;
 
-            // Find neighbors within epsilon
-            List<Point> neighbors = getNeighbors(p, contextPoints);
+            // Query neighbors directly from grid (no giant list)
+            List<Point> neighbors = getNeighbors(p, cell);
 
             if (neighbors.size() < minPoints) {
                 if (p.clusterLabel == -1) p.clusterLabel = 0; // Noise
@@ -62,41 +56,37 @@ public class HPDBSCAN {
                 p.isCore = true;
                 int currentClusterId;
 
-                // Several threads might touch the same point p (because of halos and parallel cells).
-                // We want to avoid two threads assigning two different cluster ids to p at the same time.
-                // So we lock on p itself, for a very short time, to make this assignment safe.
                 synchronized (p) {
-                   if (p.clusterLabel <= 0) {
-                       p.clusterLabel = (int) p.id; // setting core-point as cluster with lable, its own corr-
-                   }
-                   currentClusterId = p.clusterLabel;
+                    if (p.clusterLabel <= 0) {
+                        p.clusterLabel = (int) p.id; // core-point as cluster label
+                    }
+                    currentClusterId = p.clusterLabel;
                 }
 
-                expandCluster(p, neighbors, currentClusterId, contextPoints);
+                expandCluster(p, neighbors, currentClusterId, cell);
             }
         }
     }
 
-    private void expandCluster(Point core, List<Point> neighbors, int clusterId, List<Point> context) {
-        // Standard DBSCAN expansion, but record merges if we hit existing clusters
+    private void expandCluster(Point core, List<Point> neighbors, int clusterId, GridCell cell) {
         Queue<Point> queue = new LinkedList<>(neighbors);
         
         while (!queue.isEmpty()) {
             Point q = queue.poll();
             
-            // Conflict Detection (Phase 4 of paper):
-            // If q already has a DIFFERENT label, we must merge these two clusters later.
+            // Conflict Detection: merge if different cluster labels
             if (q.clusterLabel != -1 && q.clusterLabel != 0 && q.clusterLabel != clusterId) {
                 recordMerge(clusterId, q.clusterLabel);
                 continue; 
             }
 
-            if (q.clusterLabel == 0) q.clusterLabel = clusterId; // noise >--to--> border
+            if (q.clusterLabel == 0) q.clusterLabel = clusterId; // noise -> border
             if (q.clusterLabel != -1) continue; // Already processed
             q.clusterLabel = clusterId;
             q.visited = true;
 
-            List<Point> q_Neighbors = getNeighbors(q, context);
+            // Query neighbors directly from grid (no giant list)
+            List<Point> q_Neighbors = getNeighbors(q, cell);
             if (q_Neighbors.size() >= minPoints) {
                 q.isCore = true;
                 queue.addAll(q_Neighbors);
@@ -104,31 +94,29 @@ public class HPDBSCAN {
         }
     }
 
-    private List<Point> getNeighbors(Point p, List<Point> context) {
+    // NEW: Scan neighbor cells on-the-fly, NO giant contextPoints list
+    private List<Point> getNeighbors(Point p, GridCell centerCell) {
         List<Point> neighbors = new ArrayList<>();
-        for (Point candidate : context) {
-            if (p.distanceTo(candidate) <= epsilon) {
-                neighbors.add(candidate);
+        
+        // Get all neighbor cell keys (27 total: self + 26 neighbors)
+        List<List<Long>> neighborKeys = generateNeighborKeys(centerCell.cellKey);
+        neighborKeys.add(centerCell.cellKey);  // include self
+        
+        for (List<Long> key : neighborKeys) {
+            GridCell gc = grid.get(key);
+            if (gc == null) continue;
+            
+            // Scan points in this neighbor cell
+            for (Point candidate : gc.points) {
+                if (p.distanceTo(candidate) <= epsilon + 1e-9) {
+                    neighbors.add(candidate);
+                }
             }
         }
         return neighbors;
     }
 
-    // Retrieve points from this cell AND all 3^d - 1 neighbor cells
-    private List<Point> getHaloPoints(GridCell cell) {
-        List<Point> halo = new ArrayList<>(cell.points);
-        List<List<Long>> neighborKeys = generateNeighborKeys(cell.cellKey);
-        
-        for (List<Long> key : neighborKeys) {
-            GridCell neighbor = grid.get(key);
-            if (neighbor != null) {
-                halo.addAll(neighbor.points);
-            }
-        }
-        return halo;
-    }
-
-    // Utility to generate keys for all adjacent grid cells
+    // Retrieve neighbor cell keys (unchanged)
     private List<List<Long>> generateNeighborKeys(List<Long> center) {
         List<List<Long>> keys = new ArrayList<>();
         generateKeysRecursive(center, new ArrayList<>(), 0, keys);
@@ -152,14 +140,12 @@ public class HPDBSCAN {
         int rootA = findRoot(labelA);
         int rootB = findRoot(labelB);
         if (rootA != rootB) {
-            // Simple union
             synchronized (clusterMerges) {
                 clusterMerges.put(Math.max(rootA, rootB), Math.min(rootA, rootB));
             }
         }
     }
 
-    // Find the canonical label for a cluster 
     private int findRoot(int label) {
         int curr = label;
         while (clusterMerges.containsKey(curr)) {
@@ -168,7 +154,7 @@ public class HPDBSCAN {
         return curr;
     }
 
-    // Final pass: update all point labels to their canonical root label
+    // Final pass: update all point labels to canonical roots
     private void resolveMerges() {
         for (Point p : points) {
             if (p.clusterLabel > 0) {

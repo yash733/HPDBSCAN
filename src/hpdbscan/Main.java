@@ -6,6 +6,7 @@ import java.util.Map;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("=== HPDBSCAN Main starting... ===");
 
-        if (args.length < 3) {
+        if (args.length < 4 ) {
             System.out.println("Usage: java hpdbscan.Main <csv_file_path> <epsilon> <minPoints>");
             return;
         }
@@ -21,6 +22,7 @@ public class Main {
         String filePath = args[0];
         double epsilon = Double.parseDouble(args[1]);
         int minPoints = Integer.parseInt(args[2]);
+        String current_run_dir = args[3];
 
         try {
             System.out.println("Loading points from: " + filePath);
@@ -31,21 +33,33 @@ public class Main {
 
             HPDBSCAN algo = new HPDBSCAN(points, epsilon, minPoints);
             System.out.println("=== Running HPDBSCAN... ===");
+            System.out.println("MinPoint:"+minPoints);
+            System.out.println("Epsilon:"+epsilon);
             algo.run();
-
-            try (PrintWriter pw = new PrintWriter("hpdbscan_output.csv")) {
+            
+            // Ensure output directory exists
+            File outputDir = new File(current_run_dir);
+            if (!outputDir.exists()) {
+                outputDir.mkdirs();
+                System.out.println("Created output directory: " + current_run_dir);
+            }
+            
+            // Extract just the filename from the filepath (remove directory path)
+            String baseFileName = new File(filePath).getName();
+            String file_name = current_run_dir + File.separator + "hpdbscan_" + epsilon + "_" + minPoints + "_" + baseFileName;
+            try (PrintWriter pw = new PrintWriter(file_name)) {
                 for (Point p : points) {
                     double[] c = p.getCoords();
                     // write: x,y,label (extend if higher‑dimensional)
                     pw.println(c[0] + "," + c[1] + "," + p.getLabel());
                 }
-                }
-            System.out.println("Wrote clustering result to hpdbscan_output.csv");
-
-            System.out.println("Sample Results (First 10 points):");
-            for (int i = 0; i < Math.min(10, points.size()); i++) {
-                System.out.println(points.get(i));
             }
+            System.out.println("Wrote clustering result to " + file_name);
+
+            // System.out.println("Sample Results (First 10 points):");
+            // for (int i = 0; i < Math.min(10, points.size()); i++) {
+            //     System.out.println(points.get(i));
+            // }
 
             // Count points per cluster
             Map<Integer, Integer> counts = new HashMap<>();
@@ -72,15 +86,33 @@ public class Main {
             //     }
             // }
 
+            System.out.println("/----Stats----/");
+
             long endTime = System.currentTimeMillis();
-            System.out.println(" ==== Clustering completed in " + (endTime - startTime) + "ms ==== ");
+            System.out.println("==== Clustering completed in " + (endTime - startTime) + "ms ==== ");
+
+            // Calculate total cluster points
+            int totalClusterPoints = 0;
+            for (int label : counts.keySet()) {
+                if (label > 0) {
+                    totalClusterPoints += counts.get(label);
+                }
+            }
+            int totalPoints = points.size();
+            double clusterPercentage = (double) totalClusterPoints / totalPoints * 100;
+            double noisePercentage = (double) noisePoints / totalPoints * 100;
 
             System.out.println("=== Total Number of: ===");
             System.out.println("Clusters (label > 0): " + clusterCount);
-            System.out.println("Noise points (label = 0): " + noisePoints);
+            System.out.println("Cluster points: " + totalClusterPoints + " (" + String.format("%.2f", clusterPercentage) + "%)");
+            System.out.println("Noise points (label = 0): " + noisePoints + " (" + String.format("%.2f", noisePercentage) + "%)");
 
         } catch (IOException e) {
-            System.err.println("Error reading file: " + e.getMessage());
+            System.err.println("ERROR - File I/O Error: " + e.getMessage());
+            e.printStackTrace();
+        } catch (Exception e) {
+            System.err.println("ERROR - Unexpected error during execution: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 
