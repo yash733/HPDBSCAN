@@ -3,8 +3,12 @@
 ### "Yash Gupta"
 
 ### To run
-1. Python: ```python .\src\verify_hpdbscan.py```<br>
-        <b>change line '13'```JAVAC_PATH``` & line '14'```JAVA_PATH```</b>
+1. Python: 
+        <b>Change line '13'```JAVAC_PATH``` & line '14'```JAVA_PATH``` in ```verify_hpdbscan.py```</b>
+        ```
+        python .\src\verify_hpdbscan.py
+        ```<br>
+        
 2. Java: ```java -cp bin hpdbscan.Main _csv_file_path_ _epsilon_ _minPoints_```<br>
     ```
     java -cp bin hpdbscan.Main data.csv 1.5 2
@@ -16,7 +20,7 @@
 
 ### Java, Quick Access Commands 
 <ol>
-<li>$env:Path = "Y:\java\jdk-25.0.2\bin;"</li> <b>change as per your sys config</b><br>
+<li>$env:Path = "Y:\java\jdk-25.0.2\bin;" <b>"Change as per your sys config"</b> </li>
 <li>rm -Recurse -Force bin</li>
 <li>mkdir bin</li>
 <li>javac -d bin src\hpdbscan\*.java</li>
@@ -50,77 +54,78 @@ In verify_hpdbscan.py change ```run_cmd = [JAVA_PATH, "-cp", "bin", "hpdbscan.Ma
 
 #### Sample outputs
 ```
-(.venv) PS D:\DB Scan> java -cp bin hpdbscan.Main datasets/densired_3.csv 0.025 50
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
 === HPDBSCAN Main starting... ===
 Loading points from: datasets/densired_3.csv
 Loaded 10000000 points.
 === Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.2
 Phase 1: Indexing points into grid...
 Phase 2: Running Parallel Local DBSCAN...
 Phase 3: Merging cluster labels...
-Wrote clustering result to hpdbscan_output.csv
-=== Cluster summary: ===
-  Cluster 0: 9999536 points
-  Cluster 3356064: 50 points
-  Cluster 3355223: 50 points
-  Cluster 3355140: 61 points
-  Cluster 3340309: 72 points
-  Cluster 3324601: 50 points
-  Cluster 3369646: 51 points
-  Cluster 3330892: 130 points
- ==== Clustering completed in 37603ms ====
+Wrote clustering result to 0312_2254\hpdbscan_0.2_50_densired_3.csv
+/----Stats----/
+==== Clustering completed in 363930ms ====
 === Total Number of: ===
-Clusters (label > 0): 7
-Noise points (label = 0): 9999536
+Clusters (label > 0): 19
+Cluster points: 8890811 (88.91%)
+Noise points (label = 0): 1109189 (11.09%)
 
-(.venv) PS D:\DB Scan> java -cp bin hpdbscan.Main datasets/densired_3.csv 0.02 60
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
 === HPDBSCAN Main starting... ===
 Loading points from: datasets/densired_3.csv
 Loaded 10000000 points.
 === Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.2
 Phase 1: Indexing points into grid...
 Phase 2: Running Parallel Local DBSCAN...
 Phase 3: Merging cluster labels...
-Wrote clustering result to hpdbscan_output.csv
- ==== Clustering completed in 29389ms ==== 
+Wrote clustering result to 0312_2254\hpdbscan_0.2_80_densired_3.csv
+/----Stats----/
+==== Clustering completed in 358029ms ====
 === Total Number of: ===
-Clusters (label > 0): 0
-Noise points (label = 0): 10000000
+Clusters (label > 0): 10
+Cluster points: 8460639 (84.61%)
+Noise points (label = 0): 1539361 (15.39%)
 
-(.venv) PS D:\DB Scan> java -cp bin hpdbscan.Main datasets/densired_3.csv 0.02 15
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
 === HPDBSCAN Main starting... ===
 Loading points from: datasets/densired_3.csv
 Loaded 10000000 points.
 === Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.2
 Phase 1: Indexing points into grid...
 Phase 2: Running Parallel Local DBSCAN...
 Phase 3: Merging cluster labels...
-Wrote clustering result to hpdbscan_output.csv
- ==== Clustering completed in 37034ms ==== 
+Wrote clustering result to 0312_2254\hpdbscan_0.2_100_densired_3.csv
+/----Stats----/
+==== Clustering completed in 349329ms ====
 === Total Number of: ===
-Clusters (label > 0): 310
-Noise points (label = 0): 9948533
+Clusters (label > 0): 39
+Cluster points: 8168496 (81.68%)
+Noise points (label = 0): 1831504 (18.32%)
 
-(.venv) PS D:\DB Scan> java -cp bin hpdbscan.Main datasets/densired_3.csv 0.035 60
-=== HPDBSCAN Main starting... ===
-Loading points from: datasets/densired_3.csv
-Loaded 10000000 points.
-=== Running HPDBSCAN... ===
-Phase 1: Indexing points into grid...
-Phase 2: Running Parallel Local DBSCAN...
-Phase 3: Merging cluster labels...
-Wrote clustering result to hpdbscan_output.csv
- ==== Clustering completed in 46883ms ==== 
-=== Total Number of: ===
-Clusters (label > 0): 12
-Noise points (label = 0): 9945476
+   Executed Successfully
 
-(.venv) PS D:\DB Scan> java -cp bin hpdbscan.Main datasets/densired_3.csv 2 60
-=== HPDBSCAN Main starting... ===
-Loading points from: datasets/densired_3.csv
-Loaded 10000000 points.
-=== Running HPDBSCAN... ===
-Phase 1: Indexing points into grid...
-Phase 2: Running Parallel Local DBSCAN...
-Exception in thread "main" java.lang.OutOfMemoryError
+Processing:  83%|██████████████████████████████████████████████████████████████████▋             | 5/6 [1:01:10<17:18, 1038.83s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+⚠ Java OutOfMemoryError detected. Skipping.
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+⚠ Java OutOfMemoryError detected. Skipping.
 ```

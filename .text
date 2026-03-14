@@ -1,0 +1,3000 @@
+. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.005
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.005_5_densired_2.csv
+/----Stats----/
+==== Clustering completed in 70832ms ====
+=== Total Number of: ===
+Clusters (label > 0): 271719
+Cluster points: 3245772 (32.46%)
+Noise points (label = 0): 6754228 (67.54%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.005
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.005_10_densired_2.csv
+/----Stats----/
+==== Clustering completed in 72711ms ====
+=== Total Number of: ===
+Clusters (label > 0): 18637
+Cluster points: 479880 (4.80%)
+Noise points (label = 0): 9520120 (95.20%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.005
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.005_20_densired_2.csv
+/----Stats----/
+==== Clustering completed in 63279ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1285
+Cluster points: 98322 (0.98%)
+Noise points (label = 0): 9901678 (99.02%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.005
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.005_50_densired_2.csv
+/----Stats----/
+==== Clustering completed in 64026ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 10000000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.005
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.005_80_densired_2.csv
+/----Stats----/
+==== Clustering completed in 63947ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 10000000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.005
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.005_100_densired_2.csv
+/----Stats----/
+==== Clustering completed in 65298ms ==== 
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 10000000 (100.00%)
+
+Processing:  11%|████▌                                    | 1/9 [07:34<1:00:37, 454.69s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.01_5_densired_2.csv
+/----Stats----/
+==== Clustering completed in 63351ms ====
+=== Total Number of: ===
+Clusters (label > 0): 121145
+Cluster points: 7661957 (76.62%)
+Noise points (label = 0): 2338043 (23.38%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.01_10_densired_2.csv
+/----Stats----/
+==== Clustering completed in 63519ms ====
+=== Total Number of: ===
+Clusters (label > 0): 41488
+Cluster points: 5357702 (53.58%)
+Noise points (label = 0): 4642298 (46.42%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.01_20_densired_2.csv
+/----Stats----/
+==== Clustering completed in 61571ms ====
+=== Total Number of: ===
+Clusters (label > 0): 17247
+Cluster points: 1638142 (16.38%)
+Noise points (label = 0): 8361858 (83.62%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.01_50_densired_2.csv
+/----Stats----/
+==== Clustering completed in 62560ms ====
+=== Total Number of: ===
+Clusters (label > 0): 107
+Cluster points: 189433 (1.89%)
+Noise points (label = 0): 9810567 (98.11%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.01_80_densired_2.csv
+/----Stats----/
+==== Clustering completed in 62654ms ====
+=== Total Number of: ===
+Clusters (label > 0): 52
+Cluster points: 46524 (0.47%)
+Noise points (label = 0): 9953476 (99.53%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.01_100_densired_2.csv
+/----Stats----/
+==== Clustering completed in 63269ms ====
+=== Total Number of: ===
+Clusters (label > 0): 25
+Cluster points: 3234 (0.03%)
+Noise points (label = 0): 9996766 (99.97%)
+
+   Executed Successfully
+
+Processing:  22%|█████████▌                                 | 2/9 [14:46<51:27, 441.05s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.015_5_densired_2.csv
+/----Stats----/
+==== Clustering completed in 59030ms ====
+=== Total Number of: ===
+Clusters (label > 0): 32210
+Cluster points: 8721328 (87.21%)
+Noise points (label = 0): 1278672 (12.79%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.015_10_densired_2.csv
+/----Stats----/
+==== Clustering completed in 58977ms ====
+=== Total Number of: ===
+Clusters (label > 0): 27128
+Cluster points: 7639187 (76.39%)
+Noise points (label = 0): 2360813 (23.61%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.015_20_densired_2.csv
+/----Stats----/
+==== Clustering completed in 57641ms ====
+=== Total Number of: ===
+Clusters (label > 0): 9275
+Cluster points: 5426243 (54.26%)
+Noise points (label = 0): 4573757 (45.74%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.015_50_densired_2.csv
+/----Stats----/
+==== Clustering completed in 52624ms ====
+=== Total Number of: ===
+Clusters (label > 0): 2456
+Cluster points: 805128 (8.05%)
+Noise points (label = 0): 9194872 (91.95%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.015_80_densired_2.csv
+/----Stats----/
+==== Clustering completed in 53564ms ====
+=== Total Number of: ===
+Clusters (label > 0): 99
+Cluster points: 238702 (2.39%)
+Noise points (label = 0): 9761298 (97.61%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.015_100_densired_2.csv
+/----Stats----/
+==== Clustering completed in 53045ms ====
+=== Total Number of: ===
+Clusters (label > 0): 52
+Cluster points: 197875 (1.98%)
+Noise points (label = 0): 9802125 (98.02%)
+
+   Executed Successfully
+
+Processing:  33%|██████████████▎                            | 3/9 [21:15<41:43, 417.23s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.03
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.03_10_densired_2.csv
+/----Stats----/
+==== Clustering completed in 76705ms ====
+=== Total Number of: ===
+Clusters (label > 0): 298
+Cluster points: 8976540 (89.77%)
+Noise points (label = 0): 1023460 (10.23%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.03
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.03_20_densired_2.csv
+/----Stats----/
+==== Clustering completed in 76323ms ====
+=== Total Number of: ===
+Clusters (label > 0): 810
+Cluster points: 8642407 (86.42%)
+Noise points (label = 0): 1357593 (13.58%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.03
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.03_50_densired_2.csv
+/----Stats----/
+==== Clustering completed in 75817ms ====
+=== Total Number of: ===
+Clusters (label > 0): 3224
+Cluster points: 6515916 (65.16%)
+Noise points (label = 0): 3484084 (34.84%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.03
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.03_80_densired_2.csv
+/----Stats----/
+==== Clustering completed in 76701ms ====
+=== Total Number of: ===
+Clusters (label > 0): 723
+Cluster points: 5092944 (50.93%)
+Noise points (label = 0): 4907056 (49.07%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.03
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.03_100_densired_2.csv
+/----Stats----/
+==== Clustering completed in 71400ms ====
+=== Total Number of: ===
+Clusters (label > 0): 2388
+Cluster points: 3612871 (36.13%)
+Noise points (label = 0): 6387129 (63.87%)
+
+   Executed Successfully
+
+Processing:  44%|███████████████████                        | 4/9 [28:17<34:57, 419.43s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.065_5_densired_2.csv
+/----Stats----/
+==== Clustering completed in 227271ms ====
+=== Total Number of: ===
+Clusters (label > 0): 22648
+Cluster points: 9870564 (98.71%)
+Noise points (label = 0): 129436 (1.29%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.065_10_densired_2.csv
+/----Stats----/
+==== Clustering completed in 236882ms ====
+=== Total Number of: ===
+Clusters (label > 0): 11212
+Cluster points: 9396472 (93.96%)
+Noise points (label = 0): 603528 (6.04%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.065_20_densired_2.csv
+/----Stats----/
+==== Clustering completed in 241215ms ====
+=== Total Number of: ===
+Clusters (label > 0): 110
+Cluster points: 9002211 (90.02%)
+Noise points (label = 0): 997789 (9.98%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.065_50_densired_2.csv
+/----Stats----/
+==== Clustering completed in 231879ms ====
+=== Total Number of: ===
+Clusters (label > 0): 43
+Cluster points: 8964483 (89.64%)
+Noise points (label = 0): 1035517 (10.36%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.065_80_densired_2.csv
+/----Stats----/
+==== Clustering completed in 212786ms ====
+=== Total Number of: ===
+Clusters (label > 0): 10
+Cluster points: 8690581 (86.91%)
+Noise points (label = 0): 1309419 (13.09%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.065_100_densired_2.csv
+/----Stats----/
+==== Clustering completed in 240868ms ====
+=== Total Number of: ===
+Clusters (label > 0): 59
+Cluster points: 8548461 (85.48%)
+Noise points (label = 0): 1451539 (14.52%)
+
+   Executed Successfully
+
+Processing:  56%|███████████████████████▉                   | 5/9 [52:23<52:38, 789.53s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.085_5_densired_2.csv
+/----Stats----/
+==== Clustering completed in 399939ms ====
+=== Total Number of: ===
+Clusters (label > 0): 865
+Cluster points: 9983794 (99.84%)
+Noise points (label = 0): 16206 (0.16%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.085_10_densired_2.csv
+/----Stats----/
+==== Clustering completed in 404893ms ====
+=== Total Number of: ===
+Clusters (label > 0): 10327
+Cluster points: 9747920 (97.48%)
+Noise points (label = 0): 252080 (2.52%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.085_20_densired_2.csv
+/----Stats----/
+==== Clustering completed in 402717ms ====
+=== Total Number of: ===
+Clusters (label > 0): 4542
+Cluster points: 9158593 (91.59%)
+Noise points (label = 0): 841407 (8.41%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.085_50_densired_2.csv
+/----Stats----/
+==== Clustering completed in 384701ms ====
+=== Total Number of: ===
+Clusters (label > 0): 10
+Cluster points: 8999897 (90.00%)
+Noise points (label = 0): 1000103 (10.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.085_80_densired_2.csv
+/----Stats----/
+==== Clustering completed in 375059ms ====
+=== Total Number of: ===
+Clusters (label > 0): 10
+Cluster points: 8986558 (89.87%)
+Noise points (label = 0): 1013442 (10.13%)
+
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.085_100_densired_2.csv
+/----Stats----/
+==== Clustering completed in 368410ms ====
+=== Total Number of: ===
+Clusters (label > 0): 294
+Cluster points: 8790376 (87.90%)
+Noise points (label = 0): 1209624 (12.10%)
+
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.1_5_densired_2.csv
+/----Stats----/
+==== Clustering completed in 534096ms ====
+=== Total Number of: ===
+Clusters (label > 0): 35
+Cluster points: 9997884 (99.98%)
+Noise points (label = 0): 2116 (0.02%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.1_10_densired_2.csv
+/----Stats----/
+==== Clustering completed in 527085ms ====
+=== Total Number of: ===
+Clusters (label > 0): 2762
+Cluster points: 9921426 (99.21%)
+Noise points (label = 0): 78574 (0.79%)
+
+MinPoint:20
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.1_20_densired_2.csv
+/----Stats----/
+==== Clustering completed in 542480ms ====
+=== Total Number of: ===
+Clusters (label > 0): 957
+Cluster points: 9454286 (94.54%)
+Noise points (label = 0): 545714 (5.46%)
+
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.1_50_densired_2.csv
+/----Stats----/
+==== Clustering completed in 510156ms ====
+=== Total Number of: ===
+Clusters (label > 0): 10
+Cluster points: 9000000 (90.00%)
+Noise points (label = 0): 1000000 (10.00%)
+
+MinPoint:80
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.1_80_densired_2.csv
+/----Stats----/
+==== Clustering completed in 554475ms ====
+=== Total Number of: ===
+Clusters (label > 0): 10
+Cluster points: 8999682 (90.00%)
+Noise points (label = 0): 1000318 (10.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.1_100_densired_2.csv
+/----Stats----/
+==== Clustering completed in 558418ms ====
+=== Total Number of: ===
+Clusters (label > 0): 10
+Cluster points: 8997641 (89.98%)
+Noise points (label = 0): 1002359 (10.02%)
+
+MinPoint:5
+Epsilon:0.005
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_2100\hpdbscan_0.005_5_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 303ms ====
+=== Total Number of: ===
+Clusters (label > 0): 2754
+Cluster points: 18644 (18.64%)
+Noise points (label = 0): 81356 (81.36%)
+
+Wrote clustering result to 0313_1150\hpdbscan_0.005_10_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 292ms ====
+=== Total Number of: ===
+Clusters (label > 0): 13
+Cluster points: 151 (0.15%)
+Noise points (label = 0): 99849 (99.85%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.005
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.005_20_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 297ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 100000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.005
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.005_50_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 295ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 100000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.005
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.005_80_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 297ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 100000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.005
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.005_100_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 297ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 100000 (100.00%)
+
+   Executed Successfully
+
+Processing:  11%|████▉                                       | 1/9 [00:07<00:58,  7.31s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.01_5_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 318ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1307
+Cluster points: 87260 (87.26%)
+Noise points (label = 0): 12740 (12.74%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.01_10_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 296ms ====
+=== Total Number of: ===
+Clusters (label > 0): 973
+Cluster points: 42917 (42.92%)
+Noise points (label = 0): 57083 (57.08%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.01_20_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 288ms ====
+=== Total Number of: ===
+Clusters (label > 0): 30
+Cluster points: 691 (0.69%)
+Noise points (label = 0): 99309 (99.31%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.01_50_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 275ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 100000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.01_80_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 288ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 100000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.01_100_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 288ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 100000 (100.00%)
+
+   Executed Successfully
+
+Processing:  22%|█████████▊                                  | 2/9 [00:14<00:50,  7.24s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.015_5_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 334ms ====
+=== Total Number of: ===
+Clusters (label > 0): 300
+Cluster points: 96119 (96.12%)
+Noise points (label = 0): 3881 (3.88%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.015_10_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 302ms ====
+=== Total Number of: ===
+Clusters (label > 0): 37
+Cluster points: 90773 (90.77%)
+Noise points (label = 0): 9227 (9.23%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.015_20_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 302ms ====
+=== Total Number of: ===
+Clusters (label > 0): 246
+Cluster points: 41104 (41.10%)
+Noise points (label = 0): 58896 (58.90%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.015_50_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 291ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 100000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.015_80_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 306ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 100000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.015_100_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 300ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 100000 (100.00%)
+
+   Executed Successfully
+
+Processing:  33%|██████████████▋                             | 3/9 [00:21<00:43,  7.27s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.03
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.03_10_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 441ms ====
+=== Total Number of: ===
+Clusters (label > 0): 24
+Cluster points: 99103 (99.10%)
+Noise points (label = 0): 897 (0.90%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.03
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.03_20_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 424ms ====
+=== Total Number of: ===
+Clusters (label > 0): 6
+Cluster points: 94149 (94.15%)
+Noise points (label = 0): 5851 (5.85%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.03
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.03_50_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 364ms ====
+=== Total Number of: ===
+Clusters (label > 0): 97
+Cluster points: 73531 (73.53%)
+Noise points (label = 0): 26469 (26.47%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.03
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0313_1150\hpdbscan_0.03_80_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 324ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 34738 (34.74%)
+Noise points (label = 0): 65262 (65.26%)
+
+   Executed Successfully
+
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.03
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.03_80_densired_2_shrink.csv
+==== Clustering completed in 337ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 34738 (34.74%)
+Noise points (label = 0): 65262 (65.26%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.03
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.03_100_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 280ms ====
+=== Total Number of: ===
+Clusters (label > 0): 52
+Cluster points: 9322 (9.32%)
+Noise points (label = 0): 90678 (90.68%)
+
+   Executed Successfully
+
+Processing:  44%|████████████████▉                     | 4/9 [00:32<00:40,  8.14s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.065_5_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 595ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 100000 (100.00%)
+Noise points (label = 0): 0 (0.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.065_10_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 588ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 100000 (100.00%)
+Noise points (label = 0): 0 (0.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.065_20_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 601ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 99997 (100.00%)
+Noise points (label = 0): 3 (0.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.065_50_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 597ms ====
+=== Total Number of: ===
+Clusters (label > 0): 4
+Cluster points: 98398 (98.40%)
+Noise points (label = 0): 1602 (1.60%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.065_80_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 584ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 94356 (94.36%)
+Noise points (label = 0): 5644 (5.64%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.065_100_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 644ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 94278 (94.28%)
+Noise points (label = 0): 5722 (5.72%)
+
+   Executed Successfully
+
+Processing:  56%|█████████████████████                 | 5/9 [00:42<00:34,  8.70s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.085_5_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 1035ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 100000 (100.00%)
+Noise points (label = 0): 0 (0.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.085_10_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 1063ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 100000 (100.00%)
+Noise points (label = 0): 0 (0.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.085_20_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 990ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 100000 (100.00%)
+Noise points (label = 0): 0 (0.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.085_50_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 835ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 99996 (100.00%)
+Noise points (label = 0): 4 (0.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.085_80_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 849ms ====
+=== Total Number of: ===
+Clusters (label > 0): 2
+Cluster points: 98946 (98.95%)
+Noise points (label = 0): 1054 (1.05%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.085_100_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 867ms ====
+=== Total Number of: ===
+Clusters (label > 0): 3
+Cluster points: 95002 (95.00%)
+Noise points (label = 0): 4998 (5.00%)
+
+   Executed Successfully
+
+Processing:  67%|█████████████████████████▎            | 6/9 [00:54<00:29,  9.76s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.1_5_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 1203ms ====
+=== Total Number of: ===
+Clusters (label > 0): 2
+Cluster points: 100000 (100.00%)
+Noise points (label = 0): 0 (0.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.1_10_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 1185ms ====
+=== Total Number of: ===
+Clusters (label > 0): 2
+Cluster points: 100000 (100.00%)
+Noise points (label = 0): 0 (0.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.1_20_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 1150ms ====
+=== Total Number of: ===
+Clusters (label > 0): 2
+Cluster points: 100000 (100.00%)
+Noise points (label = 0): 0 (0.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.1_50_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 1206ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 99997 (100.00%)
+Noise points (label = 0): 3 (0.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.1_80_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 1215ms ====
+=== Total Number of: ===
+Clusters (label > 0): 2
+Cluster points: 99929 (99.93%)
+Noise points (label = 0): 71 (0.07%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.1_100_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 1151ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 99544 (99.54%)
+Noise points (label = 0): 456 (0.46%)
+
+   Executed Successfully
+
+Processing:  78%|█████████████████████████████▌        | 7/9 [01:07<00:22, 11.08s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.2
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.2_5_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 5835ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 100000 (100.00%)
+Noise points (label = 0): 0 (0.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.2
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.2_10_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 5569ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 100000 (100.00%)
+Noise points (label = 0): 0 (0.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.2
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.2_20_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 5843ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 100000 (100.00%)
+Noise points (label = 0): 0 (0.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.2
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.2_50_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 5569ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 100000 (100.00%)
+Noise points (label = 0): 0 (0.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.2
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.2_80_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 5793ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 100000 (100.00%)
+Noise points (label = 0): 0 (0.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_2_shrink.csv
+Loaded 100000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.2
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.2_100_densired_2_shrink.csv
+/----Stats----/
+==== Clustering completed in 5994ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1
+Cluster points: 100000 (100.00%)
+Noise points (label = 0): 0 (0.00%)
+
+   Executed Successfully
+
+Processing:  89%|█████████████████████████████████▊    | 8/9 [01:49<00:20, 20.97s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+⚠ Java OutOfMemoryError detected. Skipping.
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+⚠ Java OutOfMemoryError detected. Skipping.
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+⚠ Java OutOfMemoryError detected. Skipping.
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+⚠ Java OutOfMemoryError detected. Skipping.
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+⚠ Java OutOfMemoryError detected. Skipping.
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+⚠ Java OutOfMemoryError detected. Skipping.
+Processing: 100%|█████████████████████████████████████| 9/9 [32:30<00:00, 216.71s/it]
+Processing:   0%|                                              | 0/9 [00:00<?, ?it/s]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.005
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.005_5_densired_3.csv
+/----Stats----/
+==== Clustering completed in 14221ms ====
+=== Total Number of: ===
+Clusters (label > 0): 5
+Cluster points: 25 (0.00%)
+Noise points (label = 0): 9999975 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.005
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.005_10_densired_3.csv
+/----Stats----/
+==== Clustering completed in 13768ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 10000000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.005
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.005_20_densired_3.csv
+/----Stats----/
+==== Clustering completed in 13451ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 10000000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.005
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.005_50_densired_3.csv
+/----Stats----/
+==== Clustering completed in 13907ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 10000000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.005
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.005_80_densired_3.csv
+/----Stats----/
+==== Clustering completed in 13447ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 10000000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.005
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.005_100_densired_3.csv
+/----Stats----/
+==== Clustering completed in 13574ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 10000000 (100.00%)
+
+   Executed Successfully
+
+Processing:  11%|████                                 | 1/9 [02:31<20:13, 151.74s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.01_5_densired_3.csv
+/----Stats----/
+==== Clustering completed in 18892ms ====
+=== Total Number of: ===
+Clusters (label > 0): 2580
+Cluster points: 17426 (0.17%)
+Noise points (label = 0): 9982574 (99.83%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.01_10_densired_3.csv
+/----Stats----/
+==== Clustering completed in 18979ms ====
+=== Total Number of: ===
+Clusters (label > 0): 5
+Cluster points: 51 (0.00%)
+Noise points (label = 0): 9999949 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.01_20_densired_3.csv
+/----Stats----/
+==== Clustering completed in 18447ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 10000000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.01_50_densired_3.csv
+/----Stats----/
+==== Clustering completed in 18075ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 10000000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.01_80_densired_3.csv
+/----Stats----/
+==== Clustering completed in 18095ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 10000000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.01
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.01_100_densired_3.csv
+/----Stats----/
+==== Clustering completed in 17953ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 10000000 (100.00%)
+
+   Executed Successfully
+
+Processing:  22%|████████▏                            | 2/9 [05:32<19:40, 168.61s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.015_5_densired_3.csv
+/----Stats----/
+==== Clustering completed in 27826ms ====
+=== Total Number of: ===
+Clusters (label > 0): 9948
+Cluster points: 136785 (1.37%)
+Noise points (label = 0): 9863215 (98.63%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.015_10_densired_3.csv
+/----Stats----/
+==== Clustering completed in 28090ms ====
+=== Total Number of: ===
+Clusters (label > 0): 845
+Cluster points: 25562 (0.26%)
+Noise points (label = 0): 9974438 (99.74%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.015_20_densired_3.csv
+/----Stats----/
+==== Clustering completed in 26948ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 10000000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.015_50_densired_3.csv
+/----Stats----/
+==== Clustering completed in 27794ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 10000000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.015_80_densired_3.csv
+/----Stats----/
+==== Clustering completed in 27596ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 10000000 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.015
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.015_100_densired_3.csv
+/----Stats----/
+==== Clustering completed in 27092ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 10000000 (100.00%)
+
+   Executed Successfully
+
+Processing:  33%|████████████▎                        | 3/9 [09:28<19:57, 199.51s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.03
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_1805\hpdbscan_0.03_5_densired_3.csv
+/----Stats----/
+==== Clustering completed in 48880ms ====
+=== Total Number of: ===
+Clusters (label > 0): 140983
+Cluster points: 1829857 (18.30%)
+Noise points (label = 0): 8170143 (81.70%)
+
+Processing:   0%|                                                                                            | 0/6 [00:00<?, ?it/s]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.03
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.03_10_densired_3.csv
+/----Stats----/
+==== Clustering completed in 53370ms ====
+=== Total Number of: ===
+Clusters (label > 0): 3819
+Cluster points: 453368 (4.53%)
+Noise points (label = 0): 9546632 (95.47%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.03
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.03_20_densired_3.csv
+/----Stats----/
+==== Clustering completed in 52429ms ====
+=== Total Number of: ===
+Clusters (label > 0): 434
+Cluster points: 176731 (1.77%)
+Noise points (label = 0): 9823269 (98.23%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.03
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.03_50_densired_3.csv
+/----Stats----/
+==== Clustering completed in 54354ms ====
+=== Total Number of: ===
+Clusters (label > 0): 6
+Cluster points: 44786 (0.45%)
+Noise points (label = 0): 9955214 (99.55%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.03
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.03_80_densired_3.csv
+/----Stats----/
+==== Clustering completed in 50178ms ====
+=== Total Number of: ===
+Clusters (label > 0): 2
+Cluster points: 275 (0.00%)
+Noise points (label = 0): 9999725 (100.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.03
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.03_100_densired_3.csv
+/----Stats----/
+==== Clustering completed in 48417ms ====
+=== Total Number of: ===
+Clusters (label > 0): 0
+Cluster points: 0 (0.00%)
+Noise points (label = 0): 10000000 (100.00%)
+
+   Executed Successfully
+
+Processing:  17%|█████████████▊                                                       
+              | 1/6 [05:20<26:43, 320.67s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.065_5_densired_3.csv
+/----Stats----/
+==== Clustering completed in 49843ms ====
+=== Total Number of: ===
+Clusters (label > 0): 52669
+Cluster points: 8044856 (80.45%)
+Noise points (label = 0): 1955144 (19.55%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.065_10_densired_3.csv
+/----Stats----/
+==== Clustering completed in 49608ms ====
+=== Total Number of: ===
+Clusters (label > 0): 15297
+Cluster points: 6332386 (63.32%)
+Noise points (label = 0): 3667614 (36.68%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.065_20_densired_3.csv
+/----Stats----/
+==== Clustering completed in 48919ms ====
+=== Total Number of: ===
+Clusters (label > 0): 8820
+Cluster points: 3411660 (34.12%)
+Noise points (label = 0): 6588340 (65.88%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.065_50_densired_3.csv
+/----Stats----/
+==== Clustering completed in 48490ms ====
+=== Total Number of: ===
+Clusters (label > 0): 339
+Cluster points: 581410 (5.81%)
+Noise points (label = 0): 9418590 (94.19%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.065_80_densired_3.csv
+/----Stats----/
+==== Clustering completed in 49037ms ====
+=== Total Number of: ===
+Clusters (label > 0): 43
+Cluster points: 431398 (4.31%)
+Noise points (label = 0): 9568602 (95.69%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.065
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.065_100_densired_3.csv
+/----Stats----/
+==== Clustering completed in 49295ms ====
+=== Total Number of: ===
+Clusters (label > 0): 12
+Cluster points: 349859 (3.50%)
+Noise points (label = 0): 9650141 (96.50%)
+
+   Executed Successfully
+
+Processing:  33%|███████████████████████████▋                                         
+              | 2/6 [11:24<23:04, 346.04s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.085_5_densired_3.csv
+/----Stats----/
+==== Clustering completed in 48612ms ====
+=== Total Number of: ===
+Clusters (label > 0): 13670
+Cluster points: 8807915 (88.08%)
+Noise points (label = 0): 1192085 (11.92%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.085_10_densired_3.csv
+/----Stats----/
+==== Clustering completed in 48863ms ====
+=== Total Number of: ===
+Clusters (label > 0): 8042
+Cluster points: 8039180 (80.39%)
+Noise points (label = 0): 1960820 (19.61%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.085_20_densired_3.csv
+/----Stats----/
+==== Clustering completed in 48732ms ====
+=== Total Number of: ===
+Clusters (label > 0): 2395
+Cluster points: 6366320 (63.66%)
+Noise points (label = 0): 3633680 (36.34%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.085_50_densired_3.csv
+/----Stats----/
+==== Clustering completed in 48488ms ====
+=== Total Number of: ===
+Clusters (label > 0): 457
+Cluster points: 2742102 (27.42%)
+Noise points (label = 0): 7257898 (72.58%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.085_80_densired_3.csv
+/----Stats----/
+==== Clustering completed in 47938ms ====
+=== Total Number of: ===
+Clusters (label > 0): 557
+Cluster points: 827123 (8.27%)
+Noise points (label = 0): 9172877 (91.73%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.085
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.085_100_densired_3.csv
+/----Stats----/
+==== Clustering completed in 48556ms ====
+=== Total Number of: ===
+Clusters (label > 0): 151
+Cluster points: 598793 (5.99%)
+Noise points (label = 0): 9401207 (94.01%)
+
+   Executed Successfully
+
+Processing:  50%|█████████████████████████████████████████▌                           
+              | 3/6 [17:23<17:35, 351.83s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.1_5_densired_3.csv
+/----Stats----/
+==== Clustering completed in 58374ms ====
+=== Total Number of: ===
+Clusters (label > 0): 591
+Cluster points: 8961191 (89.61%)
+Noise points (label = 0): 1038809 (10.39%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.1_10_densired_3.csv
+/----Stats----/
+==== Clustering completed in 57552ms ====
+=== Total Number of: ===
+Clusters (label > 0): 7314
+Cluster points: 8611547 (86.12%)
+Noise points (label = 0): 1388453 (13.88%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.1_20_densired_3.csv
+/----Stats----/
+==== Clustering completed in 58568ms ====
+=== Total Number of: ===
+Clusters (label > 0): 4050
+Cluster points: 7423927 (74.24%)
+Noise points (label = 0): 2576073 (25.76%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.1_50_densired_3.csv
+/----Stats----/
+==== Clustering completed in 57396ms ====
+=== Total Number of: ===
+Clusters (label > 0): 1317
+Cluster points: 4469005 (44.69%)
+Noise points (label = 0): 5530995 (55.31%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.1_80_densired_3.csv
+/----Stats----/
+==== Clustering completed in 56998ms ====
+=== Total Number of: ===
+Clusters (label > 0): 101
+Cluster points: 2743542 (27.44%)
+Noise points (label = 0): 7256458 (72.56%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.1
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.1_100_densired_3.csv
+/----Stats----/
+==== Clustering completed in 55227ms ====
+=== Total Number of: ===
+Clusters (label > 0): 150
+Cluster points: 2029387 (20.29%)
+Noise points (label = 0): 7970613 (79.71%)
+
+   Executed Successfully
+
+Processing:  67%|███████████████████████████████████████████████████████▎             
+              | 4/6 [24:15<12:31, 375.57s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:5
+Epsilon:0.2
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.2_5_densired_3.csv
+/----Stats----/
+==== Clustering completed in 356347ms ====
+=== Total Number of: ===
+Clusters (label > 0): 14
+Cluster points: 9000020 (90.00%)
+Noise points (label = 0): 999980 (10.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:10
+Epsilon:0.2
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.2_10_densired_3.csv
+/----Stats----/
+==== Clustering completed in 362915ms ====
+=== Total Number of: ===
+Clusters (label > 0): 10
+Cluster points: 9000000 (90.00%)
+Noise points (label = 0): 1000000 (10.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:20
+Epsilon:0.2
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.2_20_densired_3.csv
+/----Stats----/
+==== Clustering completed in 357000ms ====
+=== Total Number of: ===
+Clusters (label > 0): 10
+Cluster points: 8999948 (90.00%)
+Noise points (label = 0): 1000052 (10.00%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:50
+Epsilon:0.2
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.2_50_densired_3.csv
+/----Stats----/
+==== Clustering completed in 363930ms ====
+=== Total Number of: ===
+Clusters (label > 0): 19
+Cluster points: 8890811 (88.91%)
+Noise points (label = 0): 1109189 (11.09%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:80
+Epsilon:0.2
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.2_80_densired_3.csv
+/----Stats----/
+==== Clustering completed in 358029ms ====
+=== Total Number of: ===
+Clusters (label > 0): 10
+Cluster points: 8460639 (84.61%)
+Noise points (label = 0): 1539361 (15.39%)
+
+   Executed Successfully
+
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+=== HPDBSCAN Main starting... ===
+Loading points from: datasets/densired_3.csv
+Loaded 10000000 points.
+=== Running HPDBSCAN... ===
+MinPoint:100
+Epsilon:0.2
+Phase 1: Indexing points into grid...
+Phase 2: Running Parallel Local DBSCAN...
+Phase 3: Merging cluster labels...
+Wrote clustering result to 0312_2254\hpdbscan_0.2_100_densired_3.csv
+/----Stats----/
+==== Clustering completed in 349329ms ====
+=== Total Number of: ===
+Clusters (label > 0): 39
+Cluster points: 8168496 (81.68%)
+Noise points (label = 0): 1831504 (18.32%)
+
+   Executed Successfully
+
+Processing:  83%|██████████████████████████████████████████████████████████████████▋             | 5/6 [1:01:10<17:18, 1038.83s/it]1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+⚠ Java OutOfMemoryError detected. Skipping.
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+⚠ Java OutOfMemoryError detected. Skipping.
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+⚠ Java OutOfMemoryError detected. Skipping.
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+⚠ Java OutOfMemoryError detected. Skipping.
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+⚠ Java OutOfMemoryError detected. Skipping.
+1. Compiling Java HPDBSCAN...
+   Compilation successful.
+2. Running Java HPDBSCAN...
+⚠ Java OutOfMemoryError detected. Skipping.
