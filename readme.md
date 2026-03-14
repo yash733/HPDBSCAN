@@ -52,7 +52,8 @@ In verify_hpdbscan.py change ```run_cmd = [JAVA_PATH, "-cp", "bin", "hpdbscan.Ma
 
 
 
-#### Sample outputs
+#### Sample outputs 
+<em>For more logs check out .text</em> 
 ```
 1. Compiling Java HPDBSCAN...
    Compilation successful.
