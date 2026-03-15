@@ -4,10 +4,10 @@
 
 ### To run
 1. Python: 
-        <b>Change line '13'```JAVAC_PATH``` & line '14'```JAVA_PATH``` in ```verify_hpdbscan.py```</b>
-        ```
+        <b>Change line '13'```JAVAC_PATH``` & line '14'```JAVA_PATH``` in ```verify_hpdbscan.py```</b><br>
+   ```
         python .\src\verify_hpdbscan.py
-        ```<br>
+   ```
         
 2. Java: ```java -cp bin hpdbscan.Main _csv_file_path_ _epsilon_ _minPoints_```<br>
     ```
@@ -18,9 +18,9 @@
 ##### Set Custom _csv_file_path_ , _epsilon_ , _minPoints_
 - In ```verify_hpdbscan.py```, go to line 18,19,20 and change the values to iterate over, generating required results.
 
-### Java, Quick Access Commands 
+### Java, Quick Access Commands -
 <ol>
-<li>$env:Path = "Y:\java\jdk-25.0.2\bin;" <b>"Change as per your sys config"</b> </li>
+<li>$env:Path = "Y:\java\jdk-25.0.2\bin;" <b><i>"Change as per your sys config"</i></b> </li>
 <li>rm -Recurse -Force bin</li>
 <li>mkdir bin</li>
 <li>javac -d bin src\hpdbscan\*.java</li>
@@ -46,11 +46,34 @@
 </ul>
 
 ### Config Number of Cores to oprate on?
-In verify_hpdbscan.py change ```run_cmd = [JAVA_PATH, "-cp", "bin", "hpdbscan.Main", sample_data, str(epsilon), str(minpoint), current_run]``` to ```run_cmd = [JAVA_PATH, "-Djava.util.concurrent.ForkJoinPool.common.parallelism=8", "-cp", "bin", "hpdbscan.Main", sample_data, str(epsilon), str(minpoint), current_run]```
+#### Python -
+In ```verify_hpdbscan.py``` <em>COMMENT</em> line '82'<br>
+```
+run_cmd = [JAVA_PATH, "-cp", "bin", "hpdbscan.Main", sample_data, str(epsilon), str(minpoint), current_run]
+```
+<em>UNCOMMENT</em> line '83'<br>
+```
+run_cmd = [JAVA_PATH, "-Djava.util.concurrent.ForkJoinPool.common.parallelism=8", "-cp", "bin", "hpdbscan.Main", sample_data, str(epsilon), str(minpoint), current_run]
+```
 - Replace 8 with your desired number of threads (e.g., match your CPU's core count or hyper-threaded logical cores).
 - Test incrementally—start with a value like 4 or 8 and monitor performance/memory usage, as too many threads can lead to overhead or out-of-memory errors (especially with large datasets).
 
-
+#### Java -
+In ```src/hpdbscan/HPDBSCAN.java``` <em>COMMENT</em> line '22' & '35'<br>
+```
+public HPDBSCAN(List<Point> points, double epsilon, int minPoints) {
+```
+```
+grid.values().parallelStream().forEach(this::processCellLocally);
+```
+<em>UNCOMMENT</em> line '21' & '37-38'
+```
+public HPDBSCAN(List<Point> points, double epsilon, int minPoints, int parallelism) {
+```
+```
+ForkJoinPool pool = new ForkJoinPool(parallelism);
+pool.submit(() -> grid.values().parallelStream().forEach(this::processCellLocally)).join();
+```
 
 #### Sample outputs 
 <em>For more logs check out .text</em> 
