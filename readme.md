@@ -6,7 +6,7 @@
 1. Python: 
         <b>Change line '13'```JAVAC_PATH``` & line '14'```JAVA_PATH``` in ```verify_hpdbscan.py```</b><br>
    ```
-        python .\src\verify_hpdbscan.py
+   python .\src\verify_hpdbscan.py
    ```
         
 2. Java: ```java -cp bin hpdbscan.Main _csv_file_path_ _epsilon_ _minPoints_```<br>
