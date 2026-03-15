@@ -9,17 +9,21 @@ public class HPDBSCAN {
     private final double epsilon;
     private final int minPoints;
     private final List<Point> points;
+    private final int parallelism;
+    
     
     // Spatial Index: Map Cell Key -> GridCell
     private final Map<List<Long>, GridCell> grid = new ConcurrentHashMap<>();
     
     // Global Union-Find for merging cluster labels
     private final Map<Integer, Integer> clusterMerges = new ConcurrentHashMap<>();
-
+    
+    // public HPDBSCAN(List<Point> points, double epsilon, int minPoints, int parallelism) {
     public HPDBSCAN(List<Point> points, double epsilon, int minPoints) {
         this.points = points;
         this.epsilon = epsilon;
         this.minPoints = minPoints;
+        //this.parallelism = parallelism;
     }
 
     public void run() {
@@ -29,6 +33,9 @@ public class HPDBSCAN {
         System.out.println("Phase 2: Running Parallel Local DBSCAN...");
         // Parallel stream mimics distributing work to processors
         grid.values().parallelStream().forEach(this::processCellLocally);
+        // To handel No. of Cores to run on
+        // ForkJoinPool pool = new ForkJoinPool(parallelism);
+        // pool.submit(() -> grid.values().parallelStream().forEach(this::processCellLocally)).join();
 
         System.out.println("Phase 3: Merging cluster labels...");
         resolveMerges();

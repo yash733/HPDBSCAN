@@ -79,6 +79,7 @@ def run_pipeline():
                 # 3. Run Java Application
                 print("2. Running Java HPDBSCAN...")
                 run_cmd = [JAVA_PATH, "-cp", "bin", "hpdbscan.Main", sample_data, str(epsilon), str(minpoint), current_run]
+                # run_cmd = [JAVA_PATH, "-Djava.util.concurrent.ForkJoinPool.common.parallelism=8", "-cp", "bin", "hpdbscan.Main", sample_data, str(epsilon), str(minpoint), current_run]
 
                 try:
                     result = subprocess.run(run_cmd, capture_output=True, text=True, check=True, env=env)
